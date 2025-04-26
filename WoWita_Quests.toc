@@ -1,0 +1,15 @@
+﻿## Interface: 11300
+## Title: WoWita_Quests
+## Version: Classic
+## Notes_en: AddOn displays the translated quest informations.
+## Notes: traduttore ita
+## Author: Icedany
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: QTR_PS, QTR_SAVED, QTR_MISSING, QTR_GOSSIP, QTR_CONTROL
+## SavedVariablesPerCharacter: QTR_PC
+
+QuestData_it.lua
+Gossip_IT.lua
+WoWita_Quests.lua
+WoWita_Quests.xml
