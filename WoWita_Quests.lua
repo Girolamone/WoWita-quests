@@ -934,11 +934,18 @@ function QTR_GetQuestID(event)
 
    -- Metodo per il Quest Log (per missioni accettate)
    if QuestLogFrame and QuestLogFrame:IsVisible() then
-       local _, _, _, _, _, _, _, questID = GetQuestLogTitle(GetQuestLogSelection());
-       quest_ID = questID;
+       quest_ID  = select(8, GetQuestLogTitle(GetQuestLogSelection()));
        if QTR_onDebug then
            print("QuestLogFrame: Recuperato Quest ID: ", quest_ID or "nil");
        end
+   end
+
+   -- Quest frame
+   if QuestFrame:IsShown() and QuestFrame:IsVisible() then
+      quest_ID = GetQuestID();
+      if QTR_onDebug then
+          print("QuestFrame: Recuperato Quest ID: ", quest_ID or "nil");
+      end
    end
 
    -- Metodo specifico per QUEST_DETAIL
