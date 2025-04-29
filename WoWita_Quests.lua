@@ -931,7 +931,6 @@ end
 
 function QTR_GetQuestID(event)
    local quest_ID = nil;
-   local selectQuestIndex, questId, questData;
 
    -- Metodo per il Quest Log (per missioni accettate)
    if QuestLogFrame and QuestLogFrame:IsVisible() then
